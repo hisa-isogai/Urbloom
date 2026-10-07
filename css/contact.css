@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+.contact-form {
+  max-width: 673px;
+  width: 100%;
+  margin-inline: auto;
+  padding-block: 64px;
+}
+
+.form-item {
+  margin-bottom: 32px;
+}
+
+.form-item:last-child {
+  margin-bottom: 0;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  max-width: 673px;
+  width: 100%;
+  height: 54px;
+  border-radius: 50px;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #185946;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+input.name {
+  width: 320px;
+}
+
+textarea {
+  width: 672px;
+  height: 240px;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.input-text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.mail {
+  display: block;
+}
+
+.mail>* {
+  margin-bottom: 8px;
+}
+
+.privacy-box {
+  max-width: 1080px;
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #185946;
+  border-radius: 16px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-item:has(textarea) {
+  margin-bottom: 16px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 24px;
+  height: 24px;
+}
+
+.confirm {
+  margin-bottom: 160px;
+  text-align: center;
+}
+
+.confirm-btn {
+  width: 200px;
+  height: 56px;
+  background-color: #107E5F;
+  color: #fff;
+  border: 1px solid #185946;
+  border-radius: 40px;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.asterisk {
+  font-size: 10px;
+}
+
+
+/* /////////////////////////////////////////////////// */
+@media screen and (max-width:767px) {
+
+  .page-fv {
+    padding-top: 80px;
+  }
+
+  .contact {
+    padding-block: 0;
+  }
+
+  .contact-form {
+    width: 320px;
+    padding-block: 40px;
+  }
+
+  .form-item {
+    margin-bottom: 20px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    height: 44px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 240px;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .input-text,
+  .input-tel {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+    place-content: center;
+    place-items: center;
+  }
+
+  .mail>* {
+    margin-bottom: 0;
+  }
+
+  .checkbox>p {
+    font-size: 14px;
+  }
+
+  .label {
+    font-size: 16px;
+  }
+
+  .privacy-box {
+    padding: 20px 18px 20px 10px;
+    font-size: 12px;
+  }
+
+  .box {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  .confirm {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .confirm-btn {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+  }
+}

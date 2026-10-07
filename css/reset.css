@@ -1,0 +1,94 @@
+/*======================
+  reset
+======================*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: .3s ease;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+th {
+  font-weight: normal;
+  text-align: left;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+small {
+  font-size: inherit;
+}
+
+address {
+  font-style: inherit;
+}
+
+summary {
+  outline: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+  outline: none;
+}
+
+/* input[type="submit"] {
+  -webkit-appearance: none;
+} */

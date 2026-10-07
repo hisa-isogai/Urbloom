@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+.about-img {
+  margin-top: 40px;
+  display: block;
+}
+
+.concept {
+  padding-block: 120px 160px;
+  text-align: center;
+}
+
+.concept-img {
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.concept-title {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.concept-text>p {
+  margin-top: 40px;
+}
+
+.service {
+  text-align: center;
+}
+
+.service-inner {
+  max-width: 1280px;
+  width: 100%;
+  height: 892px;
+  margin-inline: auto;
+  background-image: url(../img/about/about-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.service-img {
+  max-width: 580px;
+  width: 100%;
+}
+
+.service-contents {
+  margin-top: 80px;
+}
+
+.service-contents>p {
+  margin-bottom: 40px;
+}
+
+.mvv {
+  padding-block: 221px;
+  text-align: center;
+}
+
+.mvv-list {
+  margin-top: 80px;
+}
+
+.mvv-list-item {
+  margin-bottom: 40px;
+}
+
+.mvv-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.mvv-list-title {
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 400;
+}
+
+.sec-img {
+  height: 540px;
+  margin-bottom: 120px;
+  background-image: url(../img/about/sec-img.jpg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/* /////////////////////////////////////////////////// */
+@media screen and (max-width:1100px) {
+
+  .about-img {
+    margin-inline: auto;
+  }
+
+  .service-img {
+    max-width: 420px;
+    height: auto;
+  }
+}
+
+
+/* /////////////////////////////////////////////////// */
+@media screen and (max-width:767px) {
+
+  .about-img {
+    max-width: 319px;
+    width: 100%;
+  }
+
+  .concept {
+    padding-block: 80px;
+  }
+
+  .concept-img {
+    width: 100px;
+    margin-bottom: 32px;
+  }
+
+  .concept-title {
+    font-weight: 400;
+    font-size: 23px;
+  }
+
+  .concept-text>p {
+    margin-top: 16px;
+  }
+
+  .service-inner {
+    width: 100%;
+    height: 572px;
+    background-image: none;
+  }
+
+  .service-img {
+    max-width: 320px;
+  }
+
+  .service-contents {
+    margin-top: 32px;
+  }
+
+  .service-contents>p {
+    margin-bottom: 32px;
+  }
+
+  .service-nowrap {
+    white-space: nowrap;
+  }
+
+  .mvv {
+    padding-block: 80px;
+  }
+
+  .mvv-list {
+    margin-top: 32px;
+  }
+
+  .mvv-list-item {
+    margin-bottom: 16px;
+  }
+
+  .mvv-list-title {
+    margin-bottom: 8px;
+  }
+
+  .sec-img {
+    margin-bottom: 0;
+    background-image: url(../img/about/sec-img-sp.jpg);
+  }
+}

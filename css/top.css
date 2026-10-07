@@ -1,0 +1,487 @@
+@charset "UTF-8";
+
+/* topページのエラーを消す */
+.slick-loading .slick-list {
+  background: none;
+}
+
+/* ----------------------------------------
+fv
+---------------------------------------- */
+.fv-title-area {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 128px;
+  margin-block: 92px 80px;
+}
+
+.fv-title {
+  display: flex;
+  align-items: flex-end;
+}
+
+.main-copy {
+  max-width: 596px;
+  width: 100%;
+  margin-right: 40px;
+  vertical-align: bottom;
+}
+
+.fv-sub-title {
+  font-size: 20px;
+  color: rgba(24, 89, 70, 0.5);
+}
+
+/* ----------------------------------------
+slider(main-visual)
+---------------------------------------- */
+.main-visual-slider {
+  max-width: 1312px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.main-visual-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* ----------------------------------------
+about
+---------------------------------------- */
+.about {
+  padding-block: 160px 120px;
+}
+
+.about-wrapper {
+  max-width: 856px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.about-copy {
+  margin-bottom: 72px;
+  font-weight: 300;
+  font-size: 56px;
+}
+
+.about-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-img {
+  max-width: 416px;
+  width: 100%;
+  height: 422px;
+  margin-right: 60px;
+}
+
+.about-contents {
+  max-width: 400px;
+  width: 100%;
+}
+
+.about-text {
+  margin-bottom: 80px;
+  font-size: 20px;
+}
+
+.text {
+  margin: 20px 0;
+}
+
+/* ----------------------------------------
+case
+---------------------------------------- */
+.case {
+  max-width: 1440px;
+  width: 100%;
+  margin-inline: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ----------------------------------------
+自動スライドショー(CASE INTERVIEW)
+---------------------------------------- */
+.case-copy-wrap {
+  position: absolute;
+  top: -90px;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.case-copy-track {
+  display: inline-flex;
+  animation: case-copy-scroll 25s linear infinite;
+}
+
+.case-copy {
+  width: 3041px;
+  height: 312px;
+  color: #F6F8F8;
+  font-weight: 200;
+  font-size: 240px;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+@keyframes case-copy-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.case-inner {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.case-title-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.case-title {
+  font-weight: 300;
+  font-size: 56px;
+}
+
+.case-title-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 160px;
+  padding-inline: 20px;
+  text-align: center;
+}
+
+.case-btn {
+  margin: 40px auto 104px;
+}
+
+.marquee-wrap {
+  position: absolute;
+  /* 他のコンテンツの背面に配置する想定 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  /* はみ出た部分を隠す */
+  white-space: nowrap;
+  z-index: 0;
+  /* 前面のテキストより奥に */
+}
+
+.marquee-track {
+  display: inline-flex;
+  animation: marquee-scroll 20s linear infinite;
+}
+
+.marquee-text {
+  font-size: 8rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.05);
+  /* 薄いグレー、これで「背景っぽさ」が出ます */
+  padding-right: 4rem;
+  /* テキスト間の余白 */
+  flex-shrink: 0;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+    /* テキストを2つ並べているので、ちょうど半分動かすとループする */
+  }
+}
+
+/* ----------------------------------------
+news
+---------------------------------------- */
+.news {
+  padding: 200px 122px;
+}
+
+.news-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.news-title-area {
+  margin-right: 152px;
+}
+
+.news-title {
+  width: 261px;
+  margin-bottom: 40px;
+}
+
+.sub-news {
+  text-align: right;
+}
+
+/* TOP NEWSの記事部分 */
+.top-news .news-link-img {
+  width: 150px;
+  height: 100px;
+  margin-right: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+  transform: none;
+}
+
+.top-news .news-link-inner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+
+
+/* /////////////////////////////////////////////////// */
+@media screen and (max-width:1100px) {
+
+  .fv-title-area {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fv-title {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .main-copy {
+    margin-bottom: 16px;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  .about-copy,
+  .case-title {
+    font-size: 40px;
+  }
+
+  .news {
+    padding: 80px 8px;
+    margin-bottom: 80px;
+    position: relative;
+  }
+
+  .news-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+
+  .news-title-area {
+    margin-right: 0;
+  }
+
+  .sub-news {
+    text-align: center;
+  }
+
+  .news-title {
+    width: 261px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .news-contents {
+    width: 100%;
+  }
+
+  .top-news .news-link-img {
+    width: 84px;
+    height: 56px;
+    margin-right: 8px;
+    transform: scale(1.8);
+    transform-origin: left top;
+  }
+
+  .news-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    white-space: nowrap;
+  }
+}
+
+
+/* /////////////////////////////////////////////////// */
+@media screen and (max-width:767px) {
+
+  /* ----------------------------------------
+fv
+---------------------------------------- */
+  .fv-title-area {
+    padding-top: 80px;
+    margin-block: 56px 40px;
+  }
+
+  .fv-title {
+    margin-bottom: 0;
+  }
+
+  .main-copy {
+    width: 96%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .fv-sub-title {
+    margin-bottom: 8px;
+    color: rgba(24, 89, 70, 0.5);
+    font-size: 16px;
+  }
+
+  .fv-title-area>p {
+    font-size: 22px;
+  }
+
+  .main-visual {
+    margin-top: 40px;
+  }
+
+  /* ----------------------------------------
+about
+---------------------------------------- */
+  .about {
+    padding-block: 80px 0;
+  }
+
+  .about-wrapper {
+    max-width: 856px;
+    width: 100%;
+  }
+
+  .about-copy {
+    margin-bottom: 24px;
+    font-size: 28px;
+  }
+
+  .about-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-img {
+    max-width: 335px;
+    width: 100%;
+    height: 324px;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-contents {
+    width: 100%;
+  }
+
+  .about-text {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+
+  .text {
+    margin: 16px 0;
+  }
+
+  .about-btn {
+    margin: 0 auto;
+  }
+
+  /* ----------------------------------------
+case
+---------------------------------------- */
+  .case {
+    padding-bottom: 56px;
+  }
+
+  .case-copy-wrap {
+    top: -20px;
+  }
+
+  .case-copy {
+    width: 796px;
+    height: 166px;
+    color: #F6F8F8;
+    font-size: 128px;
+  }
+
+  .case-inner {
+    width: 100%;
+  }
+
+  .case>img {
+    max-width: 510px;
+    height: 152px;
+    margin-bottom: 32px;
+    margin-inline: auto;
+    object-fit: cover;
+    display: block;
+    /* ← 追加：margin-inline: auto を効かせるために必要 */
+  }
+
+  .case-title {
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: 25px;
+  }
+
+  .sub-title {
+    margin-bottom: 32px;
+  }
+
+  .sp-only {
+    display: block;
+  }
+
+  .case-title-area {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .case-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  /* ----------------------------------------
+news
+---------------------------------------- */
+  .news {
+    margin-bottom: 0;
+  }
+}
